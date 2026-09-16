@@ -1,13 +1,15 @@
-function cetakAngka(n) {
-    if (n === 0) {
-        return;
-    }
+// function cetakAngka(n) {
+//     if (n === 0) {
+//         return;
+//     }
 
-    console.log(n);
-    cetakAngka(n - 1);
-}
+//     console.log(n);
+//     cetakAngka(n - 1);
+// }
 
-var x = parseInt(prompt("masukan angka"));
+// var x = parseInt(prompt("masukan angka"));
 
-cetakAngka(x);
+// cetakAngka(x);
+
+///////////////////
 
