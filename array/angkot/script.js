@@ -67,3 +67,15 @@ var hapusPenumpang = function (namaPenumpang, penumpang) {
         return penumpang;
     }
 };
+
+
+// program untuk menghapus penumpang
+    // Jika angkot kosong
+      // tampilkan pesan angkot kosong
+      // return 
+// else
+    // telusuri kursi untuk penumpang yang sama
+        // jika pesan ada penumpang yang dicari
+        // hapus penumpang jadi undifined
+        //return
+    

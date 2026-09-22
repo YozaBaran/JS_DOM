@@ -58,13 +58,34 @@ var hapusPenumpang = function (namaPenumpang, penumpangAngkot) {
 }
 
 // program untuk menghapus penumpang
+var hapusPenumpang = function (namaPenumpang, penumpangAngkot) {
     // Jika angkot kosong
-      // tampilkan pesan angkot kosong
-      // return 
-// else
-    // telusuri kursi untuk penumpang yang sama
-        // jika pesan ada penumpang yang dicari
-        // hapus penumpang jadi undifined
-        //return
-    // jika tidak ada penumpang yang dicari
-    
+    if (penumpangAngkot.length == 0) {
+        // tampilkan pesan angkot kosong
+        console.log("penumpang di angkot sedang kosong")
+        // return 
+        return penumpangAngkot;
+    }
+    // else
+    else {
+        // telusuri kursi untuk penumpang yang sama
+        for (var i = 0; i < penumpangAngkot.length; i++) {
+            // jika pesan ada penumpang yang dicari
+            if (penumpang[i] == namaPenumpang) {
+                // hapus penumpang jadi undifined
+                penumpangAngkot[i] = undefined
+                //return
+                return penumpangAngkot;
+            }
+
+            // jika tidak ada penumpang yang dicari
+            else if (i == penumpangAngkot.length - 1) {
+                //tampilkan pesarn penumpang tidak ada di angkot
+                console.log("nama penumpang tidak ada di dalam angkot")
+                // return penumpang
+                return penumpangAngkot;
+            }
+        }
+    }
+}
+// end of the code
