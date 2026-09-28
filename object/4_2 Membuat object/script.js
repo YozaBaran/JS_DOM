@@ -24,3 +24,14 @@ function buatObjectMhs(nama, umur, jurusan) { // urutan parameter harus sesuai d
 };
 
 var mhs3 = buatObjectMhs('syakir', 20, 'teknik informatika'); // parameter mengikuti urutan variabel
+
+
+// 3. Constructor Function
+function Mahasiswa(nama, umur, jeniskelamin, jurusan) {
+    this.nama = nama;
+    this.umur = umur;
+    this.jeniskelamin = jeniskelamin;
+    this.jurusan = jurusan;
+}
+
+var mahasiswa1 = new Mahasiswa('joko', 20, 'laki-laki', 'teknik informatika');
